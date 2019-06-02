@@ -126,12 +126,11 @@ end
 def big_shoe_rebounds
   game_hash.each do |home_away, team_data|
     team_data.each do |team, attributes|
-      if team == :player
-        attributes.each do ||
+      if team == :players
+        attributes.each do |player, stats|
+          binding.pry
         end
       end
-    end
-      binding.pry
     end
   end
 end
