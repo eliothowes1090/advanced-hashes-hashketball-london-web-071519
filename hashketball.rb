@@ -138,7 +138,7 @@ def big_shoe_rebounds
             if player = player_with_biggest_shoes
               stats.each do |stat, value|
                 if stat = :rebounds
-                 rebounds = value
+                 rebounds << value
                 end
               end
             end
