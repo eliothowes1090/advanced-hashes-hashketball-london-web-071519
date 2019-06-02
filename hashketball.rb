@@ -136,10 +136,12 @@ def big_shoe_rebounds
             end
           end
         end
-        player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
-        if player == player_with_biggest_shoes && stat == :rebounds
-          rebounds << value
-        end
+        attributes.each do |player, stats|
+          player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
+            if player == player_with_biggest_shoes && stat == :rebounds
+              rebounds << value
+            end
+          end
       end
     end
   end
