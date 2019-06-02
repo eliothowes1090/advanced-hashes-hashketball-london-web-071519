@@ -125,6 +125,7 @@ end
 
 def big_shoe_rebounds
   biggest_shoes = {}
+  player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
   game_hash.each do |home_away, team_data|
     team_data.each do |team, attributes|
       if team == :players
@@ -145,6 +146,5 @@ def big_shoe_rebounds
       end
     end
   end
-  player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
   binding.pry
 end
