@@ -130,6 +130,7 @@ def big_shoe_rebounds
         attributes.each do ||
         end
       end
+    end
       binding.pry
     end
   end
