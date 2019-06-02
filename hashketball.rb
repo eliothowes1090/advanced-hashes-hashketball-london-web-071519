@@ -135,6 +135,7 @@ def big_shoe_rebounds
               biggest_shoes[player] = value
             end
             player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
+            binding.pry
             # if player == player_with_biggest_shoes && stat == :rebounds
             #   rebounds << value
             # end
@@ -143,6 +144,5 @@ def big_shoe_rebounds
       end
     end
   end
-    binding.pry
   return rebounds
 end
