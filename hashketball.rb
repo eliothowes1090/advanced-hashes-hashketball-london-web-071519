@@ -138,9 +138,9 @@ def big_shoe_rebounds
             #   rebounds << value
             # end
           end
-          player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
-          binding.pry
         end
+        player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
+        binding.pry
       end
     end
   end
