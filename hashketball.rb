@@ -138,6 +138,6 @@ def big_shoe_rebounds
       end
     end
   end
-  puts biggest_shoes
+  puts biggest_shoes.key(hash.values.max)
   binding.pry
 end
