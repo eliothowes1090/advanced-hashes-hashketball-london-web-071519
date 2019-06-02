@@ -141,7 +141,6 @@ def big_shoe_rebounds
             if player == player_with_biggest_shoes && stat == :rebounds
               rebounds << value
             end
-          end
         end
       end
     end
