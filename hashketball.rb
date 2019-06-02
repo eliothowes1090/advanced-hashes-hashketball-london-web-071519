@@ -132,9 +132,8 @@ def big_shoe_rebounds
           stats.each do |stat, value|
             if stat == :shoe
               biggest_shoes[player] = value
-              player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
             end
-            player_with_biggest_shoes
+            player_with_biggest_shoes = biggest_shoes.key(biggest_shoes.values.max)
             binding.pry
           end
         end
