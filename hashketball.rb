@@ -138,6 +138,7 @@ def big_shoe_rebounds
           end
             if player = player_with_biggest_shoes
               stats.each do |stat, value|
+                binding.pry
                 if stat = :rebounds
                  rebounds << value
                 end
