@@ -138,6 +138,8 @@ def big_shoe_rebounds
             stats.each do |stat, value|
               if stat = :rebounds
                 return value
+              end
+            end
         end
       end
     end
